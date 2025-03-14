@@ -3,14 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Site</title>
+  <title>Aeliana Starweaver - Official Website</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
   <header>
+    <nav>
+        <img src="images/astral-logo.jpg" alt="Aeliana Starweaver Logo" id="logo" />
+        <a href="#about" class="active">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
   </header>
+
   <main>
+    <section id="about">
+        <h2>Greetings, Earthling! I'm vTuber Aeliana!</h2>
+
+        <img src="images/avatar.jpg" alt="Aeliana Starweaver Avatar" id="about-image" />
+        <p class="about-text">I'm Aeliana Starweaver, and... well, I'm not exactly from around here. I hail from the Astral Loom, a realm where constellations are woven into reality. A little portal mishap brought me to your fascinating world, and I've decided to stay a while! I'm exploring everything Earth has to offer, one stream at a time. Expect cosmic chaos, stardust shenanigans, and lots of learning experiences (mostly mine!). Join me on my interdimensional adventure. :)</p>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/game.jpg" alt="Project 1" />
+                <h3>The Great Crystal Caverns Speedrun (World Record!)</h3>
+                <p>I conquered the treacherous Crystal Caverns in record time! Witness my legendary dodging skills (and maybe a *few* accidental glitches...)</p>
+            </div>
+            <div class="project-card">
+                <img src="images/nebula.jpg" alt="Project 2" />
+                <h3>Astral Loom Art Commission: 'Nebula Dreams'</h3>
+                <p>A digital painting commissioned by a fellow star-traveler. It captures the swirling beauty of a newborn nebula.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/learn.jpg" alt="Project 3" />
+                <h3>Learning Earth Languages: Duolingo Streak!</h3>
+                <p>I'm mastering human languages! My Duolingo streak is... impressive (mostly). Still working on slang, though. 'Yeet'?</p>
+            </div>
+            <div class="project-card">
+                <img src="images/OBS.jpg" alt="Project 4" />
+                <h3>Building a Custom Stream Overlay with Stardust Effects</h3>
+                <p>I crafted my own stream overlay using HTML, CSS, and a touch of *actual* stardust (don't ask how I got it). It's got sparkles!</p>
+            </div>
+            <div class="project-card">
+                <img src="images/karaoke.jpg" alt="Project 5" />
+                <h3>Cosmic Karaoke Catastrophes (and Triumphs!)</h3>
+                <p>Daring enough to duet with a star-weaver? My Earth music journey is... explosive. High notes shatter asteroids. Join the sonic chaos! Teach me your Earthling ways? 😉</p>
+            </div>
+            <div class="project-card">
+                <img src="images/map.jpg" alt="Project 6" />
+                <h3>Stargazer's Guide to Getting Good (at Games...)</h3>
+                <p>Conquering Earth games, one button mash at a time! Need a co-pilot for epic RPGs and chaotic party games? Or a *very* distracting cheerleader? Let's level up! 😏</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-card">
+            <p>I'm always up for meeting new people, whether you're from Earth or... elsewhere! 😉 Feel free to reach out through the usual channels. And if you're curious about your cosmic destiny, I might be persuaded to give you a quick constellation reading...</p>
+            <form id="contact-form">
+                <div class="form-group"
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
   </main>
+
   <footer>
   </footer>
 </body>

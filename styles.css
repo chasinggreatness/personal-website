@@ -1,0 +1,177 @@
+html {
+    color: aliceblue; /* aliceblue text */
+}
+
+header {
+    background-color: #1a1a2e; /* Dark background, suggestive of space */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space out logo and links */
+    align-items: center; /* Vertically center items */
+    max-width: 1200px; /* Limit the width for larger screens */
+    margin: 0 auto; /* Center the nav on the page */
+    padding: 0 2rem; /* Add some padding on the sides */
+}
+
+nav a {
+    color: aliceblue; /* alice blue text */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #6a459f; /* A subtle purple highlight on hover */
+}
+
+#logo {
+    max-width: 10%; /* Limit the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#about {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space out image and text */
+    padding: 4rem 2rem;
+    background-color: #282846; /* Slightly lighter background */
+    color: #ffffff;
+}
+
+#about-image {
+    max-width: 20rem;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 2rem; /* Add space between image and text */
+    margin-left: 2rem;
+    border: .5rem solid #6a459f;
+    animation: floating 3s ease-in-out infinite; /* Apply the floating animation */
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+        
+    }
+    50% {
+        transform: translateY(-15px);
+        border-color: aliceblue;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#projects {
+    background-color: #333;
+}
+
+#projects h2 {
+    margin-top: 0; /* Remove the top margin */
+    padding: 2rem 0 0 2em; /* Add some padding */
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: .5rem .5rem 2rem .5rem;
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333; /* Dark gray text - was dark purple */
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333; /* Dark gray text - was dark purple*/
+    margin-bottom: 0;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+body {
+    margin: 0;
+}
+
+#contact {
+    background-color: #282846;
+    padding: 2rem;
+}
+
+#contact h2 {
+    margin-top: 0;
+}
+
+#name, #email, #message {
+    margin: .5rem;
+}
+
+.contact-card {
+    margin-left: 2rem;
+}
+
+#contact-form{
+    display: flex;
+    justify-content: column;
+    max-width: 600px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+#contact-form button {
+    padding: 0.5rem 1rem;
+    background-color: #6a459f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 0; /* Add some space above the button */
+}
+
+#contact-form button:hover {
+    background-color: #a280e6;
+}
